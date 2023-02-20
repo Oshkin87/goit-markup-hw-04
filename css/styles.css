@@ -208,7 +208,6 @@ body {
         gap: 24px;
 }
 .features-icons {
-
         display: flex;
         align-items: center;
         width: 100%;
@@ -216,7 +215,8 @@ body {
         padding: 24px 100px;
         background-color: #F4F4FD;
         border-radius: 4px;
-        fill: #2E2F42;        
+        fill: #2E2F42;
+        margin-bottom: 8px;        
 }
 .features-icon {
         width: 64px;
@@ -314,28 +314,34 @@ body {
         justify-content: center;
 }
 .client-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        padding: 16px 32px;                
-        border: 1px solid #8E8F99;
-        border-radius: 4px;
-}
-.client-link:hover,
-.client-link:focus{
-        border-color: #404BBF;
+        
 }
 .client-icon {
+        display: flex;
+        width: 168px;
+        height: 88px;
+        color: #8E8F99;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+}
+
+.client-icons {
+        display: inline-block;
         width: 104px;
         height: 56px;
-        fill: #8E8F99;
+        fill: currentColor;
 }
+
 .client-icon:hover,
-.client-icon:focus {
-        fill: #404BBF;
+.client-icon:focus{
+        color: #404BBF;
+        border-color:  #404BBF;
 }
+
+
 /* подвал */
 .footer-container {
         display: flex;
@@ -385,7 +391,8 @@ body {
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.1);
 }
-.social-link-footer:hover {
+.social-link-footer:hover,
+.social-link-footer:focus {
         background-color: #31D0AA;
 }
 /* секция фильтр */
@@ -454,8 +461,8 @@ body {
         border: solid #E7E9FC;
         border-width: 0 1px 1px 1px;
 }
-.card :hover,
-.card :focus {
+.card:hover,
+.card:focus {
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /* social */
@@ -474,11 +481,11 @@ body {
         background-color: #4D5AE5;
         border-radius: 50%;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
         background-color: #404BBF;
 }
-.social-item {
-        
+.social-item {   
         width: 40px;
         height: 40px;
 }
